@@ -1,0 +1,26 @@
+@mixin button {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    padding: 15px 39px;
+    background-color: transparent;
+    border: 1px solid $main-color;
+}
+@mixin button-hover {
+    color: #fff;
+    background-color: $main-color;
+}
+@mixin button-cart {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-transform: capitalize;
+    padding: 16px 39px;
+    border: 1px solid #A4A4A4;
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

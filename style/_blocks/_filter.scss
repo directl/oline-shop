@@ -1,0 +1,229 @@
+.filter {
+    margin: 51px 0 65px 0;
+
+
+    @media (max-width: $mobile-breakpoint) {
+        margin: 24px 0 32px 0;
+      }
+}
+.filter-wrap {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+
+
+    @media (max-width: $mobile-breakpoint) {
+        justify-content: space-between;
+      }
+}
+.filter-sort {
+    display: flex;
+    width: 360px;
+    height: auto;
+    gap: 30px;
+    align-items: center;
+     
+        &__current {
+            display: flex;
+            width: 100%;
+            height: auto;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        @media (max-width: $mobile-breakpoint) {
+            width: auto;
+            gap: 24px;
+          }
+}
+.filter-sort-product {
+    display: flex;
+    height: auto;
+    gap: 30px;
+    align-items: center;
+
+
+    @media (max-width: $mobile-breakpoint) {
+        gap: 24px;
+    }
+}
+
+.filter-sort-text {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-transform: uppercase;
+
+
+    transition: color $transition-delay;
+
+     &:hover {
+        color: $main-color;
+     }
+
+}
+.filter-sort-text {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 11px 16px;
+    
+
+    transition: color $transition-delay;
+
+     &:hover {
+        color: $main-color;
+     }
+
+
+     @media (max-width: $mobile-breakpoint) {
+        padding: 11px 0;
+      }
+
+}
+@media (max-width: $mobile-breakpoint) {
+    .filter-sort-text span {
+        display: none;
+    }
+  }
+.filter-sort-icon {
+    fill: #000000;
+    margin: 0 0 0 11px;
+    transition: fill $transition-delay;
+
+
+    @media (max-width: $mobile-breakpoint) {
+        margin: 0;
+      }
+}
+@media (max-width: $mobile-breakpoint) {
+    .filter-sort-icon {
+        width: 37px;
+        height: 25px;
+    }
+  }
+.filter-sort-text:hover .filter-sort-icon{
+    fill: $main-color;
+}
+.filter-sort-item {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    text-transform: uppercase;
+    transition: color $transition-delay;
+    position: relative;
+
+     &:hover {
+        color: $main-color;
+     }
+
+
+     @media (max-width: $mobile-breakpoint) {
+        font-size: 12px;
+      }
+}
+.filter-sort-item:hover .filter-sort-item--icon {
+    fill: $main-color;
+}
+.filter-sort-item--icon {
+    display: flex;
+    fill: #6F6E6E;
+    margin: 0 0 0 10px;
+    transition: fill $transition-delay;
+    cursor: pointer;
+    align-items: center;
+}
+.filter-sort-item--icon span {
+    margin: 0 6px 0 0;
+}
+.nav-cat {
+    margin-bottom: 18px;
+}
+.filter-catalog {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    color: #EF5B70;
+    border-left: 5px solid #EF5B70;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 11px;
+    cursor: pointer;
+}
+.filter-drop {
+    position: relative;
+
+     &__current {
+        position: absolute;
+        z-index: 999;
+        width: 360px;
+        background-color: #fff;
+        padding: 0 16px 16px 16px;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+     }
+}
+.filter-sort[open] .filter-sort-text {
+    color: #EF5B70;
+    fill: #EF5B70;
+    position: relative;
+    z-index: 99999;
+    background: #fff;
+}
+.filter-sort[open] {
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.cat-link {
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    margin: 11px 0;
+
+     &:hover {
+         color: #EF5B70;
+     }
+}
+.cat-list {
+    padding: 11px 24px;
+}
+.filter-size label {
+    font-size: 14px;
+    line-height: 16px;
+    color: #6F6E6E;
+    text-transform: uppercase;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.filter-size {
+    display: flex;
+    margin: 0 0 6px 0;
+}
+.filter-size:last-child {
+    margin: 0;
+}
+.filter-check-block {
+    width: 103px;
+    height: auto;
+    background: #fff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 7px 9px 11px 9px;
+    margin-top: 5px;
+    position: absolute;
+    z-index: 999;
+}
+.filter-size input {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
